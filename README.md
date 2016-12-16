@@ -83,6 +83,8 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   link back to the story on Storyful.com.
 *   guid of the MRSS item.
 *   author is the owner of the video in the story.
+*   storyful:clearance is the title and description as entered by the author for the clearance status of the story.
+*   storyful:guidance is the title and description as entered by the author for the guidance advice for the story.
 *   media:content with url to the video file and the lang (typically en) of the video file.
 *   media:thumbnail with the url of a key frame from the video.
 *   media:keywords as written by Storyful staff.
@@ -131,6 +133,16 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
         </link>
       </image>
       <originalPubDate>Thu, 15 Dec 2016 09:24:07 +0000</originalPubDate>
+      <storyful:clearance title="CLEARED">
+        <![CDATA[
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. </p>
+        ]]>
+      </storyful:clearance>
+      <storyful:clearance title="GRAPHIC">
+        <![CDATA[
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. </p>
+        ]]>
+      </storyful:clearance>
       <media:title>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere.
       </media:title>
@@ -164,12 +176,12 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 
 Storyful provides video files in the following formats:
 
-Container | Resolution | Video Encoding | Video Bitrate(Mbit/s) | Audio Encoding | Audio Bitrate(kbit/s)
-----------|------------|----------------|-----------------------|----------------|----------------------
-MP4 | 270p | H.264 | 0.5 | AAC | 96
-MP4 | 360p | H.264 | 0.5 | AAC | 96
-MP4 | 720p | H.264 | 2-2.9 | AAC | 192
-MOV | 720p | MJPEG | 15.87 | AAC | 192
+Ref# | Container | Resolution | Video Encoding | Video Bitrate(Mbit/s) | Audio Encoding | Audio Bitrate(kbit/s)
+-----|-----------|------------|----------------|-----------------------|----------------|----------------------
+1 | MP4 | 270p | H.264 | 0.5 | AAC | 96
+2 | MP4 | 360p | H.264 | 0.5 | AAC | 96
+3 | MP4 | 720p | H.264 | 2-2.9 | AAC | 192
+4 | MOV | 720p | MJPEG | 15.87 | AAC | 192
 
 1, 2 and 3 are dependant on the originating platform. We do not transcode or provide multiple options in these cases. The only option is 4 where we transcode by special request.
 
