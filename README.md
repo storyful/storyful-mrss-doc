@@ -211,7 +211,7 @@ Contact support@storyful.com for your permanent access token.
 
 ## Base
 
-https://mrss.storyful.com/v2/<acess_token>.xml
+`https://mrss.storyful.com/v2/<acess_token>.xml`
 
 ## Version
 
@@ -227,11 +227,11 @@ The following optional parameters can be included and combined in the query stri
 
 name | type | description | default value | example
 -----|------|-------------|---------------|--------
-num_items | integer | Number of items (stories) returned. | 50 | <base_url>num_items=10</base_url>
-brief | boolean | Use shorter content for summary and description elements. | n | <base_url>brief=y</base_url>
-html | boolean | Allow HTML tags in summary and description elements. | y | <base_url>html=n</base_url>
-bare| boolean | It removes clearance mark from story titles | n | <base_url>bare_title=n</base_url>
-strict | boolean | It includes only standard nodes | n | <base_url>strict=y</base_url>
+num_items | integer | Number of items (stories) returned. | 50 | num_items=10
+brief | boolean | Use shorter content for summary and description elements. | n | brief=y
+html | boolean | Allow HTML tags in summary and description elements. | y | html=n
+bare| boolean | It removes clearance mark from story titles. | y | bare=n
+strict | boolean | It includes only standard nodes. | n | strict=y
 
 ## Support
 
