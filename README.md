@@ -227,7 +227,7 @@ The following optional parameters can be included and combined in the query stri
 
 name | type | description | default value | example
 -----|------|-------------|---------------|--------
-num_items | integer | Number of items (stories) returned. | 50 | num_items=10
+items | integer | Number of items (stories) returned. | 50 | items=10
 brief | boolean | Use shorter content for summary and description elements. | n | brief=y
 html | boolean | Allow HTML tags in summary and description elements. | y | html=n
 bare| boolean | It removes clearance mark from story titles. | y | bare=n
