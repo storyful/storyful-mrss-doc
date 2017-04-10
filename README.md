@@ -147,7 +147,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
       </storyful:clearance>
       <storyful:slug>SPACE</storyful:slug>
       <storyful:channels>
-        <storyful:channel slug="">CNN MRSS</storyful:channel>
+        <storyful:channel slug="">Channel MRSS</storyful:channel>
       </storyful:channels>
       <media:title>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere.
