@@ -85,11 +85,18 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   author is the owner of the video in the story.
 *   storyful:clearance is the title and description as entered by the author for the clearance status of the story.
 *   storyful:guidance is the title and description as entered by the author for the guidance advice for the story.
-*   media:content with url to the video file and the lang (typically en) of the video file.
-*   media:thumbnail with the url of a key frame from the video.
-*   media:keywords as written by Storyful staff.
+*   storyful:slug is the slug of the story e.g. MEXICO.
+*   storyful:channels is the list of channels the story is assigned to.
+*   media:title is the title of the story written by Storyful staff.
+*   media:description is the description and summary of story.
 *   media:credit required credit text as written by Storyful staff.
-*   category as chosen by Storyful staff.
+*   media:content with url to the video file and the lang (typically en) of the video file.
+*   media:keywords as written by Storyful staff.
+*   media:category as chosen by Storyful staff.
+*   media:thumbnail with the url of a key frame from the video.
+
+* There are also several Ooyala elements which are temporary and should not be relied on.
+* The category elements usually contain keywords that our journalists associate with each piece of content. However, if required, a feed can by configured to use IPTC categories in these elements instead. The ‘scheme’ attribute is only present when IPTC categories are enabled on the feed.
 
 ### Sample
 ```
@@ -138,11 +145,10 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. </p>
         ]]>
       </storyful:clearance>
-      <storyful:clearance title="GRAPHIC">
-        <![CDATA[
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. </p>
-        ]]>
-      </storyful:clearance>
+      <storyful:slug>SPACE</storyful:slug>
+      <storyful:channels>
+        <storyful:channel slug="">CNN MRSS</storyful:channel>
+      </storyful:channels>
       <media:title>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere.
       </media:title>
@@ -154,7 +160,8 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
       <media:credit>Facebook</media:credit>
       <media:content url="https://storyful.s3.amazonaws.com/video/syfl-067aba5e2994a21fc3a0a26d112cd957.mp4" medium="video" lang="en"/>
       <media:keywords>School bus, Portland-Oregon, Facebook</media:keywords>
-      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG"/>
+      <media:category>News</media:category>
+      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG" medium="image" />
       <ooyala:metadata name="summary">
         <![CDATA[
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. Suspendisse at metus tempus nulla auctor consectetur nec non arcu. Quisque nec scelerisque purus. Maecenas sed metus nec lacus malesuada faucibus eu ac sem. Morbi pellentesque, libero sed semper volutpat, libero dui congue nulla, vel sollicitudin nisl sapien id nisi. Duis sit amet luctus elit, ac hendrerit tellus. </p>
@@ -168,9 +175,6 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
   </channel>
 </rss>
 ```
-
-* There are also several Ooyala elements which are temporary and should not be relied on.
-* The category elements usually contain keywords that our journalists associate with each piece of content. However, if required, a feed can by configured to use IPTC categories in these elements instead. The ‘scheme’ attribute is only present when IPTC categories are enabled on the feed.</small>
 
 ### Formats
 
