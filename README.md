@@ -40,11 +40,6 @@ This depends how often they poll the URL and if there is any delay on their MRSS
 
 As often as they want. We have one partner who polls every minute. We recommend every 5 minutes as more frequent polling will gain little.
 
-### Can we supply all PUBLIC, CLEARED, and LICENSED CONTENT?
-
-Yes, by setting up multiple MRSS feeds for a partner we can include any variation of CLEARANCE.
-This information is now provided in the node: `storyful:clearance`
-
 ### What about Trends stories?
 
 Stories in the Trends channel tend not to work well in MRSS. Our MRSS favours the style of story written for World News, Weather, Viral and Video Partners. These are stories with a primary piece of content; a video, a title, and a summary. Technically a Trends story with a primary piece of content, the MP4 set etc. will work fine in MRSS. The partner will not get all the other pieces of content in the Trends story though.
