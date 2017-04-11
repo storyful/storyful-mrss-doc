@@ -42,7 +42,8 @@ As often as they want. We have one partner who polls every minute. We recommend 
 
 ### Can we supply all PUBLIC, CLEARED, and LICENSED CONTENT?
 
-Yes, by setting up multiple MRSS feeds for a partner we can include any variation of CLEARANCE. At present we cannot supply this in one feed.
+Yes, by setting up multiple MRSS feeds for a partner we can include any variation of CLEARANCE.
+This information is now provided in the node: `storyful:clearance`
 
 ### What about Trends stories?
 
