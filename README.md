@@ -3,7 +3,7 @@
 ## What does Storyful provide through MRSS?
 
 Storyful stories can belong to one or more Channels. Storyful can provide any published story in a channel in the CMS through MRSS. The system works by channel and an MRSS feed can include multiple channels. e.g. Video Partners, or even World News, Weather, and Viral.
-What goes in a channel is controlled by our journalists. There are some rules we can configure on the MRSS feed to filter out certain stories, however the configured channels for an MRSS feed largely set the tone of the MRSS feed.
+What goes in a channel is controlled by our journalists. There are some rules we can configure on the MRSS feed to filter out certain stories. However the configured channels for an MRSS feed largely set the tone of the MRSS feed.
 Each story has a Clearance state associated with it. Clearance dictates what the client can do with the content linked to the Story.
 
 ## FAQ
@@ -38,7 +38,7 @@ This depends how often they poll the URL and if there is any delay on their MRSS
 
 ### How often can a partner poll?
 
-As often as they want. We have one partner who polls every minute. We recommend every 5 minutes at most as Storyful does not publish that much content and more frequent polling will gain little.
+As often as they want. We have one partner who polls every minute. We recommend every 5 minutes as more frequent polling will gain little.
 
 ### Can we supply all PUBLIC, CLEARED, and LICENSED CONTENT?
 
