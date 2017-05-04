@@ -233,6 +233,17 @@ html | boolean | Allow HTML tags in summary and description elements. | y | html
 bare| boolean | It removes clearance mark from story titles. | y | bare=n
 strict | boolean | It includes only standard nodes. | n | strict=y
 
+## Filters
+The following optional parameters can be included in the query string to allow you to narrow results.
+NOTE: Multiple filters are not currently supported.
+
+name | description | example
+-----|-------------|--------
+ids | filter results by specific identifier | ?ids=165220 or ?ids=165225,165220
+channel | filter results by channel | ?channel=licensed
+collection | filter results by collection | ?collection=venezuela-antigovernment-protests_2937
+slug | filter results by slug | ?slug=US-PA
+
 ## Support
 
 Contact support@storyful.com with any questions or issues.
