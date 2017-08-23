@@ -243,7 +243,7 @@ ids | filter results by specific identifier | ?ids=165220 or ?ids=165225,165220
 channel | filter results by channel | ?channel=licensed
 collection | filter results by collection | ?collection=venezuela-antigovernment-protests_2937
 slug | filter results by slug | ?slug=US-PA
-keywords | filter results by the contents of the media:keywords element. Multiple keywords in the filter are treated as a boolean OR | ?keywords=pet or ?keywords=pet,cat,dog
+keywords | filter results by the contents of the media:keywords element. Multiple keywords in the filter are treated as a boolean OR. Keywords are case-insensitive | ?keywords=pet or ?keywords=pet,cat,dog
 
 ## Backfill support
 
