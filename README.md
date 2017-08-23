@@ -243,6 +243,12 @@ ids | filter results by specific identifier | ?ids=165220 or ?ids=165225,165220
 channel | filter results by channel | ?channel=licensed
 collection | filter results by collection | ?collection=venezuela-antigovernment-protests_2937
 slug | filter results by slug | ?slug=US-PA
+keywords | filter results by the contents of the media:keywords element. Multiple keywords in the filter are treated as a boolean OR | ?keywords=pet or ?keywords=pet,cat,dog
+
+## Backfill support
+
+Our feeds support a temporary mode that allows for bulk backfilling of our content archive. While in this mode, each poll of the feed will return a batch of stories from
+the archive, starting with the oldest stories first.  Once all stories have been returned in this way, the feed reverts to normal mode. If you require an initial backfill of content as part of your feed configuration then please contact our support team.
 
 ## Support
 
