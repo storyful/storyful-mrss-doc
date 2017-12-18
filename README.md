@@ -89,7 +89,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   media:content with url to the video file and the lang (typically en) of the video file.
 *   media:keywords as written by Storyful staff.
 *   media:category as chosen by Storyful staff.
-*   media:thumbnail with the url of a key frame from the video.
+*   media:thumbnail with the url of a key frame from the video. Items may have more than one thumbnail reference with alternative sizes and crops. The width and height of thumbnails are included as attributes, if known.
 
 * There are also several Ooyala elements which are temporary and should not be relied on.
 * The category elements usually contain keywords that our journalists associate with each piece of content. However, if required, a feed can by configured to use IPTC categories in these elements instead. The ‘scheme’ attribute is only present when IPTC categories are enabled on the feed.
@@ -158,6 +158,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
       <media:keywords>School bus, Portland-Oregon, Facebook</media:keywords>
       <media:category>News</media:category>
       <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG" medium="image" />
+      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/001.PNG" medium="image" width="1028" height="720" />
       <ooyala:metadata name="summary">
         <![CDATA[
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. Suspendisse at metus tempus nulla auctor consectetur nec non arcu. Quisque nec scelerisque purus. Maecenas sed metus nec lacus malesuada faucibus eu ac sem. Morbi pellentesque, libero sed semper volutpat, libero dui congue nulla, vel sollicitudin nisl sapien id nisi. Duis sit amet luctus elit, ac hendrerit tellus. </p>
