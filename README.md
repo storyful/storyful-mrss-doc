@@ -14,7 +14,7 @@ The 50 latest stories.
 
 ### Can the archive be supplied via MRSS?
 
-No, Storyful has a custom API for that.
+Yes, the feed has a special backfill mode that allows playback of historical content. See below for details.
 
 ### What data is in the MRSS?
 
