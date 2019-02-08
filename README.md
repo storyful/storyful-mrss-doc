@@ -83,6 +83,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   storyful:guidance is the title and description as entered by the author for the guidance advice for the story.
 *   storyful:slug is the slug of the story e.g. MEXICO.
 *   storyful:channels is the list of channels the story is assigned to.
+*   storyful:categories is the list of Storyful Newswire categories (News, Politics, Funny etc.) that the story is assigned to.
 *   media:title is the title of the story written by Storyful staff.
 *   media:description is the description and summary of story.
 *   media:credit required credit text as written by Storyful staff.
@@ -145,6 +146,10 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
       <storyful:channels>
         <storyful:channel slug="">Channel MRSS</storyful:channel>
       </storyful:channels>
+      <storyful:categories>
+        <storyful:category>politics</storyful:category>
+        <storyful:category>human interest</storyful:category>
+      </storyful:categories>
       <media:title>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere.
       </media:title>
@@ -245,6 +250,7 @@ channel | filter results by channel | ?channel=licensed
 collection | filter results by collection | ?collection=venezuela-antigovernment-protests_2937
 slug | filter results by slug | ?slug=US-PA
 keywords | filter results by the contents of the media:keywords element. Multiple keywords in the filter are treated as a boolean OR. Keywords are case-insensitive | ?keywords=pet or ?keywords=pet,cat,dog
+categories | filter results by Storyful Newswire category. Multiple categories in the filter are treated as a boolean OR. Categories are case-insensitive. Spaces in category names should be replaced with hyphens '-'. | ?categories=news or ?categories=news,weather-and-science
 
 ## Backfill support
 
