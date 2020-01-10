@@ -238,6 +238,7 @@ brief | boolean | Use shorter content for summary and description elements. | n 
 html | boolean | Allow HTML tags in summary and description elements. | y | html=n
 bare| boolean | It removes clearance mark from story titles. | y | bare=n
 strict | boolean | It includes only standard nodes. | n | strict=y
+thumbs | boolean | Include media thumbnail elements. | y | thumbs=n 
 
 ## Filters
 The following optional parameters can be included in the query string to allow you to narrow results.
