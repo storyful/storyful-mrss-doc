@@ -56,6 +56,14 @@ Yes, both. Certain partners have custom categories which are selected by the jou
 
 Yes, stories have a GUIDANCE field set by the journalists which MRSS can filter on.
 
+### How do we get transcriptions (captions) for videos?
+
+Contact support@storyful.com to have transcriptions enabled for your MRSS feed.
+
+Not all the videos in our feeds will have the `<media:text>` XML elements transcriptions.
+Transcriptions are automatically generated using machine learning but may not be available in cases
+where there is no speech present, speech is too short or unclear because of multiple speakers or background noise. Jargon or slang can also reduce the accuracy of the transcription.
+
 ### Does Storyful host the video files?
 
 Technically Storyful does host the original video files but we ask that our partners download the video files, ingest them into their content systems, and serve the video from their system. This is because Storyful does not want to incur the costs or complexity of serving video for hundreds of millions of views.
