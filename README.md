@@ -90,6 +90,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   media:content with url to the video file and the lang (typically en) of the video file. Where the video duration is known, we populate the optional duration attribute (in seconds).
 *   media:keywords as written by Storyful staff.
 *   media:category as chosen by Storyful staff.
+*   media:text provides an audio transcription of the video with start and end time offsets.
 *   media:thumbnail with the url of a key frame from the video. Items may have more than one thumbnail reference with alternative sizes and crops. The width and height of thumbnails are included as attributes, if known.
 
 * There are also several Ooyala elements which are temporary and should not be relied on.
@@ -162,8 +163,12 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
       <media:content url="https://storyful.s3.amazonaws.com/video/syfl-067aba5e2994a21fc3a0a26d112cd957.mp4" medium="video" lang="en" duration="60"/>
       <media:keywords>School bus, Portland-Oregon, Facebook</media:keywords>
       <media:category>News</media:category>
-      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG" medium="image" />
-      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/001.PNG" medium="image" width="1028" height="720" />
+      <media:thumbnail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG" medium="image" />
+      <media:thumbnail url="https://storyful.s3.amazonaws.com/production/stories/001.PNG" medium="image" width="1028" height="720" />
+      <media:text type="plain" lang="en-US" start="00:00:03.25" end="00:00:03.46">Lorem</media:text>
+      <media:text type="plain" lang="en-US" start="00:00:04.100" end="00:00:05.45">Ipsum</media:text>
+      <media:text type="plain" lang="en-US" start="00:00:08.59" end="00:00:11.54">Consectetur adipiscing.</media:text>
+      <media:text type="plain" lang="en-US" start="00:00:12.65" end="00:00:12.97">Duis sit amet luctus elit, ac hendrerit tellus.</media:text>
       <ooyala:metadata name="summary">
         <![CDATA[
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. Suspendisse at metus tempus nulla auctor consectetur nec non arcu. Quisque nec scelerisque purus. Maecenas sed metus nec lacus malesuada faucibus eu ac sem. Morbi pellentesque, libero sed semper volutpat, libero dui congue nulla, vel sollicitudin nisl sapien id nisi. Duis sit amet luctus elit, ac hendrerit tellus. </p>
