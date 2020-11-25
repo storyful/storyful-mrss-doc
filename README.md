@@ -56,6 +56,14 @@ Yes, both. Certain partners have custom categories which are selected by the jou
 
 Yes, stories have a GUIDANCE field set by the journalists which MRSS can filter on.
 
+### How do we get transcriptions (captions) for videos?
+
+Contact support@storyful.com to have transcriptions enabled for your MRSS feed.
+
+Not all the videos in our feeds will have the `<media:text>` XML elements transcriptions.
+Transcriptions are automatically generated using machine learning but may not be available in cases
+where there is no speech present, speech is too short or unclear because of multiple speakers or background noise. Jargon or slang can also reduce the accuracy of the transcription.
+
 ### Does Storyful host the video files?
 
 Technically Storyful does host the original video files but we ask that our partners download the video files, ingest them into their content systems, and serve the video from their system. This is because Storyful does not want to incur the costs or complexity of serving video for hundreds of millions of views.
@@ -90,6 +98,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   media:content with url to the video file and the lang (typically en) of the video file. Where the video duration is known, we populate the optional duration attribute (in seconds).
 *   media:keywords as written by Storyful staff.
 *   media:category as chosen by Storyful staff.
+*   media:text provides an audio transcription of the video with start and end time offsets.
 *   media:thumbnail with the url of a key frame from the video. Items may have more than one thumbnail reference with alternative sizes and crops. The width and height of thumbnails are included as attributes, if known.
 
 * There are also several Ooyala elements which are temporary and should not be relied on.
@@ -162,8 +171,12 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
       <media:content url="https://storyful.s3.amazonaws.com/video/syfl-067aba5e2994a21fc3a0a26d112cd957.mp4" medium="video" lang="en" duration="60"/>
       <media:keywords>School bus, Portland-Oregon, Facebook</media:keywords>
       <media:category>News</media:category>
-      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG" medium="image" />
-      <media:thumnbail url="https://storyful.s3.amazonaws.com/production/stories/001.PNG" medium="image" width="1028" height="720" />
+      <media:thumbnail url="https://storyful.s3.amazonaws.com/production/stories/000.PNG" medium="image" />
+      <media:thumbnail url="https://storyful.s3.amazonaws.com/production/stories/001.PNG" medium="image" width="1028" height="720" />
+      <media:text type="plain" lang="en-US" start="00:00:03.25" end="00:00:03.46">Lorem</media:text>
+      <media:text type="plain" lang="en-US" start="00:00:04.100" end="00:00:05.45">Ipsum</media:text>
+      <media:text type="plain" lang="en-US" start="00:00:08.59" end="00:00:11.54">Consectetur adipiscing.</media:text>
+      <media:text type="plain" lang="en-US" start="00:00:12.65" end="00:00:12.97">Duis sit amet luctus elit, ac hendrerit tellus.</media:text>
       <ooyala:metadata name="summary">
         <![CDATA[
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id libero ac posuere. Suspendisse at metus tempus nulla auctor consectetur nec non arcu. Quisque nec scelerisque purus. Maecenas sed metus nec lacus malesuada faucibus eu ac sem. Morbi pellentesque, libero sed semper volutpat, libero dui congue nulla, vel sollicitudin nisl sapien id nisi. Duis sit amet luctus elit, ac hendrerit tellus. </p>
