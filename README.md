@@ -268,8 +268,7 @@ categories | filter results by Storyful Newswire category. Multiple categories i
 
 ## Backfill support
 
-Our feeds support a temporary mode that allows for bulk backfilling of our content archive. While in this mode, each poll of the feed will return a batch of stories from
-the archive, starting with the oldest stories first.  Once all stories have been returned in this way, the feed reverts to normal mode. If you require an initial backfill of content as part of your feed configuration then please contact our support team.
+Our feeds support a temporary mode that allows for bulk backfilling of our content archive. While in this mode, each poll of the feed will return a batch of stories from the archive, starting with the most recent stories first and work back in time. Once all stories have been returned in this way, the feed reverts to normal mode. If you require an initial backfill of content as part of your feed configuration then please contact our support team.
 
 ## Support
 
