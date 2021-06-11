@@ -74,7 +74,7 @@ Storyful typically provides original video files from a variety of platforms inc
 
 ### Delivery
 
-Storyful delivers video metadata as MRSS or via a custom API available in XML or JSON.
+Storyful delivers video metadata as MRSS.
 
 ### MRSS
 
