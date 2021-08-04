@@ -92,6 +92,7 @@ The MRSS provides up to 50 items at a time in reverse chronological order with t
 *   storyful:slug is the slug of the story e.g. MEXICO.
 *   storyful:channels is the list of channels the story is assigned to.
 *   storyful:categories is the list of Storyful Newswire categories (News, Politics, Funny etc.) that the story is assigned to.
+*   storyful:stated-location is the location of the story
 *   media:title is the title of the story written by Storyful staff.
 *   media:description is the description and summary of story.
 *   media:credit required credit text as written by Storyful staff.
