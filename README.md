@@ -253,6 +253,9 @@ html | boolean | Allow HTML tags in summary and description elements. | y | html
 bare| boolean | It removes clearance mark from story titles. | y | bare=n
 strict | boolean | It includes only standard nodes. | n | strict=y
 thumbs | boolean | Include media thumbnail elements. | y | thumbs=n 
+convert_gifs | string | convert images from gif to provided format | n | convert_gifs=png, convert_gifs=jpeg
+
+
 
 ## Filters
 The following optional parameters can be included in the query string to allow you to narrow results.
@@ -266,6 +269,7 @@ collection | filter results by collection | ?collection=venezuela-antigovernment
 slug | filter results by slug | ?slug=US-PA
 keywords | filter results by the contents of the media:keywords element. Multiple keywords in the filter are treated as a boolean OR. Keywords are case-insensitive | ?keywords=pet or ?keywords=pet,cat,dog
 categories | filter results by Storyful Newswire category. Multiple categories in the filter are treated as a boolean OR. Categories are case-insensitive. Spaces in category names should be replaced with hyphens '-'. | ?categories=news or ?categories=news,weather-and-science
+
 
 ## Backfill support
 
